@@ -279,7 +279,7 @@ void right(int degrees, int speed, int forward_speed){
 
         theta = theta + ((gyro_z() - bias) * loop_time); 
         printf("%f\n",theta);
-        msleep(20);
+        msleep(15);
         mav(0,-speed + forward_speed);
         mav(1,speed + forward_speed);
 
